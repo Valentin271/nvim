@@ -159,6 +159,7 @@ You can install new plugins here: [plugins](https://github.com/Valentin271/nvim/
 - [impatient.nvim](https://github.com/lewis6991/impatient.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
+- [vim-sleuth](https://github.com/tpope/vim-sleuth)
 - [darcula](https://github.com/doums/darcula)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
