@@ -1,14 +1,8 @@
-# A Basic Stable IDE config for Neovim
+# My neovim config
 
-> Why does this repo exist?
+This is my attempt at configuring and using neovim.
 
-This config attempts to provide a rock solid fully featured starting point for someone new to Neovim, or just tired of maintaining the basic IDE components of their config.
-
-> What makes it "rock solid"?
-
-All of the included plugins are pinned to a version that ensures they are compatible and will not update potentially introducing errors into your config. For every Neovim release I will update this repo along with the community to keep it up to date with the newest versions.
-
-As I mentioned, this config is meant as a starting point for people new to Neovim who want a familiar IDE experience. The config has a very simple structure that makes it easy to add new plugins.
+**NOTE** This is still a work in progress, README might not be up to date.
 
 ## Install Neovim 0.8
 
@@ -31,7 +25,7 @@ sudo make install
 Make sure to remove or move your current `nvim` directory
 
 ```sh
-git clone https://github.com/LunarVim/nvim-basic-ide.git ~/.config/nvim
+git clone https://github.com/Valentin271/nvim.git ~/.config/nvim
 ```
 
 Run `nvim` and wait for the plugins to be installed
@@ -40,7 +34,7 @@ Run `nvim` and wait for the plugins to be installed
 
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
-**NOTE** Checkout this file for some predefined keymaps: [keymaps](https://github.com/LunarVim/nvim-basic-ide/blob/master/lua/user/keymaps.lua)
+**NOTE** Checkout this file for some predefined keymaps: [keymaps](https://github.com/Valentin271/nvim/blob/master/lua/user/keymaps.lua)
 
 ## Get healthy
 
@@ -89,7 +83,7 @@ We will also need `ripgrep` for Telescope to work:
 
 ---
 
-**NOTE** make sure you have [node](https://nodejs.org/en/) installed, I recommend a node manager like [fnm](https://github.com/Schniz/fnm).
+**NOTE** make sure you have [node](https://nodejs.org/en/) installed.
 
 ## Fonts
 
@@ -111,13 +105,13 @@ First Enter:
 
 and press `i` on the Language Server you wish to install
 
-Next you will need to add the server to this list: [servers](https://github.com/LunarVim/nvim-basic-ide/blob/0e65f504f634026f5765ce6a092612d385d6306d/lua/user/lsp/mason.lua#L1)
+Next you will need to add the server to this list: [servers](https://github.com/Valentin271/nvim/blob/0e65f504f634026f5765ce6a092612d385d6306d/lua/user/lsp/mason.lua#L1)
 
 Note: Builtin LSP doesn't contain all lsps from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#terraform_lsp).
 
 If you want to install any from there, for example terraform_lsp(which adds more functionality than terraformls, like complete resource listing),
 
-1. You can add the lsp name in [mason lsp block](https://github.com/LunarVim/nvim-basic-ide/blob/f03955dc1e5879164f9229d44d98ca81a948cbfb/lua/user/lsp/mason.lua#L1-L10)
+1. You can add the lsp name in [mason lsp block](https://github.com/Valentin271/nvim/blob/f03955dc1e5879164f9229d44d98ca81a948cbfb/lua/user/lsp/mason.lua#L1-L10)
 
 ```lua
 -- lua/usr/lsp/mason.lua
@@ -138,13 +132,13 @@ local servers = {
 
 ### Formatters and linters
 
-Make sure the formatter or linter is installed and add it to this setup function: [null-ls](https://github.com/LunarVim/nvim-basic-ide/blob/0e65f504f634026f5765ce6a092612d385d6306d/lua/user/lsp/null-ls.lua#L12)
+Make sure the formatter or linter is installed and add it to this setup function: [null-ls](https://github.com/Valentin271/nvim/blob/0e65f504f634026f5765ce6a092612d385d6306d/lua/user/lsp/null-ls.lua#L12)
 
 **NOTE** Some are already setup as examples, remove them if you want
 
 ### Plugins
 
-You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-basic-ide/blob/0e65f504f634026f5765ce6a092612d385d6306d/lua/user/plugins.lua#L45)
+You can install new plugins here: [plugins](https://github.com/Valentin271/nvim/blob/0e65f504f634026f5765ce6a092612d385d6306d/lua/user/plugins.lua#L45)
 
 ---
 
@@ -165,8 +159,7 @@ You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-bas
 - [impatient.nvim](https://github.com/lewis6991/impatient.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
-- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
-- [darkplus.nvim](https://github.com/LunarVim/darkplus.nvim)
+- [darcula](https://github.com/doums/darcula)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
 - [cmp-path](https://github.com/hrsh7th/cmp-path)
