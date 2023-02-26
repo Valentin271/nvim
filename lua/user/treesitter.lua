@@ -27,4 +27,12 @@ configs.setup {
     enable = true,
     enable_autocmd = false,
   },
+
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<c-space>",
+      -- node_decremental = "<c-space>"
+    },
+  }
 }
