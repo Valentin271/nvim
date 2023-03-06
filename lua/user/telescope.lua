@@ -12,6 +12,7 @@ telescope.setup {
     selection_caret = " ",
     path_display = { "smart" },
     file_ignore_patterns = { ".git/", "node_modules" },
+    dynamic_preview_title = true, -- Shows the full filepath in preview title
 
     mappings = {
       i = {
