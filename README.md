@@ -176,6 +176,7 @@ You can install new plugins here: [plugins](https://github.com/Valentin271/nvim/
 - [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [dressing.nvim](https://github.com/stevearc/dressing.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [nvim-dap](https://github.com/mfussenegger/nvim-dap)
