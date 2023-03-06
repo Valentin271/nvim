@@ -15,6 +15,7 @@ vim.g.mapleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+
 -- Normal --
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -28,19 +29,21 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
--- Navigate buffers
+-- Buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 
 -- Clear highlights
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
--- Close buffers
-keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
-
 -- Vertical movement
 keymap("n", "<C-d>", '<C-d>zz', opts)
 keymap("n", "<C-u>", '<C-u>zz', opts)
+
+
+-- Remap
+keymap("n", "x", '"_x', opts)
 
 
 -- Insert --
@@ -56,6 +59,7 @@ keymap("v", ">", ">gv", opts)
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
+
 -- Plugins --
 
 -- NvimTree
@@ -67,6 +71,8 @@ keymap("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 keymap("n", "<leader>fo", ":Telescope oldfiles<CR>", opts)
 keymap("n", "<C-p>", ":Telescope jumplist<CR>", opts)
+keymap("n", "<C-s>", ":Telescope lsp_document_symbols<CR>", opts)
+keymap("n", "<leader>tr", ":Telescope resume<CR>", opts)
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
