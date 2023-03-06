@@ -4,22 +4,6 @@ This is my attempt at configuring and using neovim.
 
 **NOTE** This is still a work in progress, README might not be up to date.
 
-## Install Neovim 0.8
-
-You can install Neovim with your package manager e.g. brew, apt, pacman etc.. but remember that when you update your packages Neovim may be upgraded to a newer version.
-
-If you would like to make sure Neovim only updates when you want it to than I recommend installing from source:
-
-**NOTE** Verify the required [build prerequisites](https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites) for your system.
-
-```sh
-git clone https://github.com/neovim/neovim.git
-cd neovim
-git checkout release-0.8
-make CMAKE_BUILD_TYPE=Release
-sudo make install
-```
-
 ## Install the config
 
 Make sure to remove or move your current `nvim` directory
@@ -182,9 +166,3 @@ You can install new plugins here: [plugins](https://github.com/Valentin271/nvim/
 - [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 - [DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim)
-
----
-
-> The computing scientist's main challenge is not to get confused by the complexities of his own making.
-
-\- Edsger W. Dijkstra
