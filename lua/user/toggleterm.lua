@@ -33,7 +33,20 @@ vim.cmd "autocmd! TermOpen term://* lua set_terminal_keymaps()"
 
 local Terminal = require("toggleterm.terminal").Terminal
 
+
+-- LAZYGIT
+
+function _LAZYGIT_on_open()
+  -- Asserts esc is available for lazygit to cancel
+  vim.api.nvim_buf_del_keymap(0, "t", "<esc>")
+end
+
 function _LAZYGIT_TOGGLE()
-  local lazygit = Terminal:new { cmd = "lazygit", hidden = true, direction = "float" }
+  local lazygit = Terminal:new({
+    cmd = "lazygit",
+    hidden = true,
+    direction = "float",
+    on_open = _LAZYGIT_on_open
+  })
   lazygit:toggle()
 end
