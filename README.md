@@ -20,6 +20,13 @@ Run `nvim` and wait for the plugins to be installed
 
 **NOTE** Checkout this file for some predefined keymaps: [keymaps](https://github.com/Valentin271/nvim/blob/master/lua/user/keymaps.lua)
 
+## Requirements
+
+- Neovim 0.8
+- ripgrep
+- fd
+- `npm i -g neovim`
+
 ## Get healthy
 
 Open `nvim` and enter the following:
@@ -49,20 +56,6 @@ Next we need to install python support (node is optional)
 
   ```sh
   pip install pynvim
-  ```
-
-- Neovim node support
-
-  ```sh
-  npm i -g neovim
-  ```
-
-We will also need `ripgrep` for Telescope to work:
-
-- Ripgrep
-
-  ```sh
-  sudo apt install ripgrep
   ```
 
 ---
