@@ -124,6 +124,7 @@ You can install new plugins here: [plugins](https://github.com/Valentin271/nvim/
 - [packer](https://github.com/wbthomason/packer.nvim)
 - [plenary](https://github.com/nvim-lua/plenary.nvim)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
 - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
