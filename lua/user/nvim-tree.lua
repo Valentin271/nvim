@@ -15,7 +15,7 @@ nvim_tree.setup {
     enable = true,
     update_cwd = true,
   },
-  select_prompt = true, -- renders nicely with dressing.nvim
+  select_prompts = true, -- renders nicely with dressing.nvim
   renderer = {
     root_folder_modifier = ":t",
     highlight_git = true,
