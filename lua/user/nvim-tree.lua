@@ -15,32 +15,28 @@ nvim_tree.setup {
     enable = true,
     update_cwd = true,
   },
+  select_prompt = true, -- renders nicely with dressing.nvim
   renderer = {
     root_folder_modifier = ":t",
+    highlight_git = true,
+    indent_markers = {
+      enable = true,
+    },
     icons = {
       glyphs = {
-        default = "",
-        symlink = "",
-        folder = {
-          arrow_open = "",
-          arrow_closed = "",
-          default = "",
-          open = "",
-          empty = "",
-          empty_open = "",
-          symlink = "",
-          symlink_open = "",
-        },
         git = {
-          unstaged = "",
-          staged = "S",
+          unstaged = "",
+          staged = "",
           unmerged = "",
           renamed = "➜",
-          untracked = "U",
+          untracked = "",
           deleted = "",
           ignored = "◌",
         },
       },
+      show = {
+        folder_arrow = false
+      }
     },
   },
   diagnostics = {
@@ -56,6 +52,7 @@ nvim_tree.setup {
   view = {
     width = 30,
     side = "left",
+    adaptive_size = true,
     mappings = {
       list = {
         { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
