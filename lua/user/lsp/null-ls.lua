@@ -22,8 +22,10 @@ null_ls.setup {
     formatting.trim_newlines,
     formatting.trim_whitespace,
 
+    diagnostics.eslint,
     diagnostics.php,
 
-    code_actions.gitsigns
+    code_actions.gitsigns,
+    code_actions.eslint,
   },
 }
