@@ -91,10 +91,7 @@ return packer.startup(function(use)
   use { "stevearc/dressing.nvim", commit = "5f44f829481640be0f96759c965ae22a3bcaf7ce" } -- Nice select and input
 
   -- Treesitter
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
-  }
+  use { "nvim-treesitter/nvim-treesitter", tag = "v0.8.5.2" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", tag = "v0.6" }
