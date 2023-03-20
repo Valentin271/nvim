@@ -21,11 +21,12 @@ dashboard.section.buttons.val = {
   dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
-local function footer()
-  return "chrisatmachine.com"
-end
 
-dashboard.section.footer.val = footer()
+dashboard.section.footer.val = function()
+  local v = vim.version()
+  local version = v.major .. "." .. v.minor .. "." .. v.patch
+  return "Neovim " .. version
+end
 
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"
