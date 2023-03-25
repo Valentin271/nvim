@@ -47,7 +47,10 @@ function _LAZYGIT_TOGGLE()
     cmd = "lazygit",
     hidden = true,
     direction = "float",
-    on_open = _LAZYGIT_on_open
+    on_open = _LAZYGIT_on_open,
+    float_opts = {
+      border = "curved"
+    }
   })
   lazygit:toggle()
 end
