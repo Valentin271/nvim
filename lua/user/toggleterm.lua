@@ -37,7 +37,7 @@ local Terminal = require("toggleterm.terminal").Terminal
 
 -- LAZYGIT
 
-function _LAZYGIT_on_open()
+local function _lazygit_on_open()
   -- Asserts esc is available for lazygit to cancel
   vim.api.nvim_buf_del_keymap(0, "t", "<esc>")
 end
@@ -47,10 +47,33 @@ function _LAZYGIT_TOGGLE()
     cmd = "lazygit",
     hidden = true,
     direction = "float",
-    on_open = _LAZYGIT_on_open,
+    on_open = _lazygit_on_open,
     float_opts = {
       border = "curved"
     }
   })
   lazygit:toggle()
+end
+
+
+-- gobang
+
+local function _gobang_on_open()
+  -- Asserts esc is available for gobang to cancel
+  vim.api.nvim_buf_del_keymap(0, "t", "<esc>")
+  -- For possibly future persitent terminal
+  -- vim.api.nvim_buf_set_keymap(0, 't', 'q',  "<cmd>lua _GOBANG_TOGGLE()<CR>", { noremap = true })
+end
+
+function _GOBANG_TOGGLE()
+  local gobang = Terminal:new({
+    cmd = "gobang",
+    hidden = true,
+    direction = "float",
+    on_open = _gobang_on_open,
+    float_opts = {
+      border = "curved"
+    }
+  })
+  gobang:toggle()
 end
