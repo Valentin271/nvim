@@ -4,6 +4,10 @@ if not status_ok then
 end
 
 local dashboard = require "alpha.themes.dashboard"
+
+
+-- HEADER
+
 dashboard.section.header.val = {
   [[                               __                ]],
   [[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
@@ -12,6 +16,11 @@ dashboard.section.header.val = {
   [[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
   [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
 }
+dashboard.section.header.opts.hl = "Title"
+
+
+-- BUTTONS
+
 dashboard.section.buttons.val = {
   dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
   dashboard.button("e", " " .. " New file", ":ene <BAR> startinsert <CR>"),
@@ -22,15 +31,44 @@ dashboard.section.buttons.val = {
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 
-dashboard.section.footer.val = function()
-  local v = vim.version()
-  local version = v.major .. "." .. v.minor .. "." .. v.patch
-  return "Neovim " .. version
+for _, btn in ipairs(dashboard.section.buttons.val) do
+  btn.opts.hl = "Keyword"
+  btn.opts.hl_shortcut = "Function"
 end
 
-dashboard.section.footer.opts.hl = "Type"
-dashboard.section.header.opts.hl = "Include"
-dashboard.section.buttons.opts.hl = "Keyword"
+
+-- FOOTER
+
+dashboard.section.footer.val = function()
+  -- version
+  local v = vim.version()
+  local version = v.major .. "." .. v.minor .. "." .. v.patch
+
+  -- plugins
+  local plugins_count = vim.fn.len(packer_plugins)
+
+  -- config date
+  local handle = io.popen("cd " .. vim.fn.stdpath("config") .. "; git log -1 --format=%cs")
+  local config_date = ""
+  if handle then
+    config_date = handle:read("l")
+    handle:close()
+  end
+
+  return {
+    "",
+    "",
+    " " .. version,
+    "",
+    " " .. plugins_count .. " plugins",
+    "",
+    " 󰜘" .. config_date,
+  }
+end
+dashboard.section.footer.opts.hl = "Comment"
+
+
+-- SETUP
 
 dashboard.opts.opts.noautocmd = true
 alpha.setup(dashboard.opts)
