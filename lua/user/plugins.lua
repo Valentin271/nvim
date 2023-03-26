@@ -65,7 +65,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use { "doums/darcula" }
-  use { 'NLKNguyen/papercolor-theme' }
+  use { "wuelnerdotexe/vim-enfocado" }
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
