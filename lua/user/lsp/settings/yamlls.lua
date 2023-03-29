@@ -1,5 +1,7 @@
 return {
   settings = {
-    schemas = require('schemastore').yaml.schemas(),
+    yaml = {
+      schemas = require('schemastore').yaml.schemas(),
+    }
   }
 }
