@@ -46,11 +46,6 @@ keymap("n", "<C-u>", '<C-u>zz', opts)
 keymap("n", "x", '"_x', opts)
 
 
--- Insert --
--- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
-
-
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
