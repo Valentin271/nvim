@@ -4,7 +4,6 @@ vim.g.enfocado_plugins = {
   "cmp",
   "dap-ui",
   "gitsigns",
-  "illuminate",
   "indent-blankline",
   "lspconfig",
   "packer",
