@@ -1,0 +1,15 @@
+{
+  "useState": {
+    "prefix": "useState",
+    "body": "const [$1, set$2] = React.useState($3);"
+  },
+  "useCallback": {
+    "prefix": "useCallback",
+    "body": "const $1 = React.useCallback(() => {$0}, []);"
+  },
+  "React Stateless Component": {
+    "prefix": "rsc",
+    "body": ["const ${1:$TM_FILENAME_BASE} = () => {", "\treturn $0", "}", "", "export default $1;"],
+    "description": "React function component"
+  },
+}

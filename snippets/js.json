@@ -1,0 +1,32 @@
+{
+  "console.log": {
+    "prefix": "log",
+    "body": "console.log($0);"
+  },
+  "export { items } from 'location'": {
+    "prefix": "exportfrom",
+    "body": "export { $0 } from '$1';"
+  },
+  "describe": {
+    "prefix": "descr",
+    "body": "describe('$1', () => {\n\t$0\n});"
+  },
+  "it": {
+    "prefix": "it",
+    "body": "it('should $1', () => {\n\t$0\n});"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": "jest.fn()"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "describe('$TM_FILENAME_BASE', () => {",
+      "\tit('should ', () => {",
+      "\t\t$0",
+      "\t});",
+      "});"
+    ]
+  }
+}
