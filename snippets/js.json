@@ -3,6 +3,10 @@
     "prefix": "log",
     "body": "console.log($0);"
   },
+  "Arrow function": {
+    "prefix": "arf",
+    "body": "() => "
+  },
   "export { items } from 'location'": {
     "prefix": "exportfrom",
     "body": "export { $0 } from '$1';"
