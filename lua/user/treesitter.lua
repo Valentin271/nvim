@@ -9,22 +9,14 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python" }, -- put the language you want in this array
-  -- ensure_installed = "all", -- one of "all" or a list of languages
+  ensure_installed = { "lua" }, -- put the language you want in this array
   ignore_install = { "" }, -- List of parsers to ignore installing
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
 
-  highlight = {
-    enable = true, -- false will disable the whole extension
-    disable = { "css" }, -- list of language that will be disabled
-  },
-  autopairs = {
-    enable = true,
-  },
-  autotag = {
-    enable = true,
-  },
-  indent = { enable = true, disable = { "python", "css" } },
+  highlight = { enable = true },
+  autopairs = { enable = true },
+  autotag = { enable = true },
+  indent = { enable = true },
 
   context_commentstring = {
     enable = true,
@@ -34,8 +26,7 @@ configs.setup {
   incremental_selection = {
     enable = true,
     keymaps = {
-      init_selection = "<c-space>",
-      -- node_decremental = "<c-space>"
+      node_incremental = "<C-w>",
     },
   }
 }
