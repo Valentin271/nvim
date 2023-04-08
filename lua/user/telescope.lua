@@ -11,7 +11,7 @@ telescope.setup {
 
     prompt_prefix = " ",
     selection_caret = " ",
-    path_display = { "smart" },
+    path_display = { "truncate" },
     file_ignore_patterns = { ".git/", "node_modules" },
     dynamic_preview_title = true, -- Shows the full filepath in preview title
 
@@ -21,8 +21,8 @@ telescope.setup {
         ["<Up>"] = actions.cycle_history_prev,
         ["<C-j>"] = actions.move_selection_next,
         ["<C-k>"] = actions.move_selection_previous,
-        ["<C-r>"] = actions.to_fuzzy_refine,
-        ["<M-p>"] = actions_layout.toggle_preview,
+        ["<A-r>"] = actions.to_fuzzy_refine,
+        ["<A-p>"] = actions_layout.toggle_preview,
       },
     },
   },
