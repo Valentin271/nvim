@@ -16,6 +16,7 @@ nvim_tree.setup {
     update_cwd = true,
   },
   select_prompts = true, -- renders nicely with dressing.nvim
+  hijack_cursor = true,
   renderer = {
     root_folder_modifier = ":t",
     highlight_git = true,
@@ -43,6 +44,7 @@ nvim_tree.setup {
     width = 30,
     side = "left",
     adaptive_size = true,
+    preserve_window_proportions = true,
     mappings = {
       list = {
         { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
