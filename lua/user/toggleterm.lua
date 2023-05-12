@@ -77,3 +77,24 @@ function _GOBANG_TOGGLE()
   })
   gobang:toggle()
 end
+
+
+-- lazydocker
+
+local function _lazydocker_on_open()
+  -- Asserts esc is available for lazydocker to cancel
+  vim.api.nvim_buf_del_keymap(0, "t", "<esc>")
+end
+
+function _LAZYDOCKER_TOGGLE()
+  local lazydocker = Terminal:new({
+    cmd = "lazydocker",
+    hidden = true,
+    direction = "float",
+    on_open = _lazydocker_on_open,
+    float_opts = {
+      border = "curved"
+    }
+  })
+  lazydocker:toggle()
+end
