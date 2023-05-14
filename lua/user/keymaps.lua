@@ -75,8 +75,8 @@ keymap("n", "<leader>fm", ":Telescope marks<CR>", opts)
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
-keymap("n", "<leader>gb", "<cmd>lua _GOBANG_TOGGLE()<CR>", opts)
-keymap("n", "<leader>go", "<cmd>lua _LAZYDOCKER_TOGGLE()<CR>", opts)
+keymap("n", "<leader>go", "<cmd>lua _GOBANG_TOGGLE()<CR>", opts)
+keymap("n", "<leader>gd", "<cmd>lua _LAZYDOCKER_TOGGLE()<CR>", opts)
 
 -- Comment
 keymap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", opts)
