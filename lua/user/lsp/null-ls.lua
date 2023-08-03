@@ -22,7 +22,11 @@ null_ls.setup {
     formatting.trim_newlines,
     formatting.trim_whitespace,
 
-    diagnostics.eslint,
+    diagnostics.eslint.with({
+      diagnostic_config = {
+        update_in_insert = false
+      }
+    }),
     diagnostics.php,
 
     code_actions.gitsigns,
