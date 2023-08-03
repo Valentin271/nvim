@@ -9,7 +9,25 @@
   },
   "React Stateless Component": {
     "prefix": "rsc",
-    "body": ["const ${1:$TM_FILENAME_BASE} = () => {", "\treturn $0", "}", "", "export default $1;"],
+    "body": [
+      "const ${1:$TM_FILENAME_BASE} = () => {",
+      "\treturn $0",
+      "}",
+      "",
+      "export default $1;"
+    ],
     "description": "React function component"
   },
+  "testing-library render": {
+    "prefix": [
+      "render",
+      "cont"
+    ],
+    "body": [
+      "const { container } = render(",
+      "\t$TM_FILENAME_BASE",
+      ");"
+    ],
+    "description": "A testing-library render extracting the container"
+  }
 }

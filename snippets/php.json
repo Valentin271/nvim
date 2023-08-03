@@ -1,0 +1,6 @@
+{
+  "public function": {
+    "prefix": "pubf",
+    "body": "public function $1() {$0}"
+  }
+}
