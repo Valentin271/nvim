@@ -73,10 +73,11 @@ keymap("n", "<C-s>", ":Telescope lsp_document_symbols<CR>", opts)
 keymap("n", "<leader>tr", ":Telescope resume<CR>", opts)
 keymap("n", "<leader>fm", ":Telescope marks<CR>", opts)
 
--- Git
+-- External program
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
 keymap("n", "<leader>go", "<cmd>lua _GOBANG_TOGGLE()<CR>", opts)
 keymap("n", "<leader>gd", "<cmd>lua _LAZYDOCKER_TOGGLE()<CR>", opts)
+keymap("n", "<leader>gi", ":silent !inlyne % &<CR>", opts)
 
 -- Comment
 keymap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", opts)
