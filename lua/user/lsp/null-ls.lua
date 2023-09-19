@@ -10,17 +10,19 @@ local code_actions = null_ls.builtins.code_actions
 null_ls.setup {
   debug = false,
   sources = {
-    formatting.prettier.with {
+    formatting.prettier.with({
       extra_filetypes = { "toml" },
       extra_args = {
         "--single-quote",
         "--trailing-comma es5",
         "--quote-props as-needed",
       },
-    },
+    }),
     formatting.stylua,
     formatting.trim_newlines,
-    formatting.trim_whitespace,
+    formatting.trim_whitespace.with({
+      disabled_filetypes = { "rust" }
+    }),
 
     diagnostics.eslint.with({
       diagnostic_config = {
