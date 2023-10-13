@@ -63,7 +63,6 @@ return packer.startup(function(use)
   use { "tpope/vim-sleuth", tag = "v2.0" }
 
   -- Colorschemes
-  use { "doums/darcula" }
   use { "wuelnerdotexe/vim-enfocado" }
 
   -- cmp plugins
@@ -87,8 +86,8 @@ return packer.startup(function(use)
   use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
 
   -- Telescope
-  use { "nvim-telescope/telescope.nvim", tag = "0.1.1" }
-  use { "stevearc/dressing.nvim", commit = "5f44f829481640be0f96759c965ae22a3bcaf7ce" } -- Nice select and input
+  use { "nvim-telescope/telescope.nvim", tag = "0.1.4" }
+  use { "stevearc/dressing.nvim", tag = "v2.0.1" } -- Nice select and input
 
   -- Treesitter
   use { "nvim-treesitter/nvim-treesitter", tag = "v0.9.0" }
