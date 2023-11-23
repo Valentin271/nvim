@@ -58,7 +58,7 @@ return packer.startup(function(use)
   use { "akinsho/toggleterm.nvim", tag = "2.4.0"}
   use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
-  use { "lukas-reineke/indent-blankline.nvim", tag = "v2.20.4" }
+  use { "lukas-reineke/indent-blankline.nvim", tag = "v3.3.7" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
   use { "tpope/vim-sleuth", tag = "v2.0" }
 
