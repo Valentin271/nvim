@@ -5,9 +5,14 @@ end
 
 bufferline.setup {
   options = {
-    close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
-    right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
     show_buffer_close_icons = false,
     show_close_icon = false,
+    offsets = {
+      {
+        filetype = "NvimTree",
+        text = "NvimTree",
+        separator = true
+      }
+    }
   },
 }
