@@ -55,8 +55,8 @@ return packer.startup(function(use)
   use { "akinsho/bufferline.nvim", tag = "v4.4.0" }
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   use { "nvim-lualine/lualine.nvim", commit = "a52f078026b27694d2290e34efa61a6e4a690621" }
-  use { "akinsho/toggleterm.nvim", tag = "2.4.0"}
-  use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
+  use { "akinsho/toggleterm.nvim", tag = "v2.8.0"}
+  use { "ahmedkhalf/project.nvim", commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" }
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   use { "lukas-reineke/indent-blankline.nvim", tag = "v3.3.7" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
@@ -74,7 +74,7 @@ return packer.startup(function(use)
   use { "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" }
 
   -- snippets
-  use { "L3MON4D3/LuaSnip", tag = "v2.0.0" } --snippet engine
+  use { "L3MON4D3/LuaSnip", tag = "v2.1.0" } --snippet engine
   use { "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" } -- a bunch of snippets to use
   use { "b0o/SchemaStore.nvim" }
 
