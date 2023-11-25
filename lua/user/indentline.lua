@@ -5,7 +5,11 @@ end
 
 indent_blankline.setup {
   indent = { char = "▏" },
-  scope = { char = "▎" },
+  scope = {
+    char = "╎",
+    show_start = false,
+    show_end = false,
+  },
   exclude = {
     filetypes = {
       "help",
