@@ -1,9 +1,14 @@
-local status_ok, indent_blankline = pcall(require, "ibl")
+local status_ok, ibl = pcall(require, "ibl")
 if not status_ok then
   return
 end
 
-indent_blankline.setup {
+local hooks_ok, hooks = pcall(require, "ibl.hooks")
+if not hooks_ok then
+  return
+end
+
+ibl.setup {
   indent = { char = "▏" },
   scope = {
     char = "╎",
@@ -22,3 +27,8 @@ indent_blankline.setup {
     }
   }
 }
+
+hooks.register(
+  hooks.type.WHITESPACE,
+  hooks.builtin.hide_first_space_indent_level
+)
