@@ -42,4 +42,4 @@ vim.opt.iskeyword:append("-")                   -- treats words with `-` as sing
 vim.opt.formatoptions:remove({ "c", "r", "o" }) -- This is a sequence of letters which describes how automatic formatting is to be done
 vim.opt.linebreak = true
 vim.opt.list = true                             -- show invisible characters
-vim.opt.listchars = "trail:•,nbsp:+"            -- configures what characters are shown by list
+vim.opt.listchars = "tab:> ,trail:•,nbsp:+"            -- configures what characters are shown by list
