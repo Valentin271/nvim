@@ -3,12 +3,17 @@ if not status_ok then
   return
 end
 
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
-if not config_status_ok then
-  return
-end
+local function define_mappings(bufnr)
+  local api = require('nvim-tree.api')
+  local opts = { buffer = bufnr, noremap = true, silent = true, nowait = true }
 
-local tree_cb = nvim_tree_config.nvim_tree_callback
+  api.config.mappings.default_on_attach(bufnr)
+
+  vim.keymap.set('n', 'l', api.node.open.edit, opts)
+  vim.keymap.set('n', '<CR>', api.node.open.edit, opts)
+  vim.keymap.set('n', 'h', api.node.navigate.parent_close, opts)
+  vim.keymap.set('n', 'v', api.node.open.vertical, opts)
+end
 
 nvim_tree.setup {
   update_focused_file = {
@@ -19,7 +24,7 @@ nvim_tree.setup {
   hijack_cursor = true,
   renderer = {
     root_folder_modifier = ":t",
-    highlight_git = true,
+    highlight_git = "all",
     indent_markers = {
       enable = true,
     },
@@ -45,12 +50,9 @@ nvim_tree.setup {
     side = "left",
     adaptive_size = true,
     preserve_window_proportions = true,
-    mappings = {
-      list = {
-        { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-        { key = "h", cb = tree_cb "close_node" },
-        { key = "v", cb = tree_cb "vsplit" },
-      },
-    },
+    number = true,
+    relativenumber = true,
+    signcolumn = "no"
   },
+  on_attach = define_mappings
 }
