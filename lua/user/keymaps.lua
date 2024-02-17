@@ -72,6 +72,7 @@ keymap("n", "<C-p>", ":Telescope jumplist<CR>", opts)
 keymap("n", "<C-s>", ":Telescope lsp_document_symbols<CR>", opts)
 keymap("n", "<leader>tr", ":Telescope resume<CR>", opts)
 keymap("n", "<leader>fm", ":Telescope marks<CR>", opts)
+keymap("n", "<leader>fu", ":Telescope undo<CR>", opts)
 
 -- External program
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
