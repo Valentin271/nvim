@@ -79,10 +79,9 @@ return packer.startup(function(use)
   use { "b0o/SchemaStore.nvim" }
 
   -- LSP
-  -- use { "williamboman/nvim-lsp-installer", commit = "e9f13d7acaa60aff91c58b923002228668c8c9e6" } -- simple to use language server installer
-  use { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" } -- enable LSP
-  use { "williamboman/mason.nvim", commit = "bfc5997e52fe9e20642704da050c415ea1d4775f" }
-  use { "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" }
+  use { "neovim/nvim-lspconfig", tag = "v0.1.7" } -- enable LSP
+  use { "williamboman/mason.nvim", tag = "v1.10.0" }
+  use { "williamboman/mason-lspconfig.nvim", tag = "v1.26.0" }
   use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
 
   -- Telescope
