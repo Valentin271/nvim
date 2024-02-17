@@ -1,14 +1,20 @@
 vim.g.enfocado_style = "nature"
+
+-- Search for "pluginIsActivated" in
+-- https://github.com/wuelnerdotexe/vim-enfocado/blob/main/colors/enfocado.vim
 vim.g.enfocado_plugins = {
   "bufferline",
-  "cmp",
-  "dap-ui",
   "gitsigns",
   "indent-blankline",
+  "null-ls",
+  "cmp",
+  "dap-ui",
+  "mason",
   "lspconfig",
+  "treesitter",
+  "tree",
   "packer",
   "telescope",
-  "treesitter",
 }
 
 local colorscheme = "enfocado"
