@@ -93,7 +93,7 @@ return packer.startup(function(use)
   use { "nvim-treesitter/nvim-treesitter", tag = "v0.9.2" }
 
   -- Git
-  use { "lewis6991/gitsigns.nvim", tag = "v0.6" }
+  use { "lewis6991/gitsigns.nvim", tag = "v0.7" }
 
   -- DAP
   use { "mfussenegger/nvim-dap", commit = "6b12294a57001d994022df8acbe2ef7327d30587" }
