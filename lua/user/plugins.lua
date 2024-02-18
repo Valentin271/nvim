@@ -45,7 +45,7 @@ packer.init {
 return packer.startup(function(use)
   -- My plugins here
   use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
-  use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
+  use { "nvim-lua/plenary.nvim", commit = "4f71c0c4a196ceb656c824a70792f3df3ce6bb6d" } -- Useful lua functions used by lots of plugins
   use { "windwp/nvim-autopairs", commit = "2e8a10c5fc0dcaf8296a5f1a7077efcd37065cc8" } -- Autopairs, integrates with both cmp and treesitter
   use { "windwp/nvim-ts-autotag" }
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
