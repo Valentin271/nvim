@@ -70,6 +70,7 @@ return packer.startup(function(use)
   use { "saadparwaiz1/cmp_luasnip", commit = "a9de941bcbda508d0a45d28ae366bb3f08db2e36" } -- snippet completions
   use { "hrsh7th/cmp-nvim-lsp", commit = "affe808a5c56b71630f17aa7c38e15c59fd648a8" }
   use { "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" }
+  use { "hrsh7th/cmp-nvim-lsp-signature-help", commit = "3d8912ebeb56e5ae08ef0906e3a54de1c66b92f1" }
 
   -- snippets
   use { "L3MON4D3/LuaSnip", tag = "v2.1.0" } --snippet engine
