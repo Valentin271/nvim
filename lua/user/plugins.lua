@@ -54,7 +54,6 @@ return packer.startup(function(use)
   use { "nvim-tree/nvim-tree.lua", tag = "v0.100" }
   use { "akinsho/bufferline.nvim", tag = "v4.4.0" }
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
-  use { "nvim-lualine/lualine.nvim", commit = "a52f078026b27694d2290e34efa61a6e4a690621" }
   use { "akinsho/toggleterm.nvim", tag = "v2.8.0"}
   use { "ahmedkhalf/project.nvim", commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" }
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
