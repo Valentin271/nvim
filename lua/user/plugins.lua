@@ -84,9 +84,9 @@ return packer.startup(function(use)
   use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
 
   -- Telescope
-  use { "nvim-telescope/telescope.nvim", tag = "0.1.4" }
-  use { "stevearc/dressing.nvim", tag = "v2.2.0" } -- Nice select and input
-  use { "debugloop/telescope-undo.nvim", commit = "d3afc1c105535a90caec092ce27a113f77ba7b84" }
+  use { "nvim-telescope/telescope.nvim", tag = "0.1.8" }
+  use { "stevearc/dressing.nvim", tag = "v2.2.1" } -- Nice select and input
+  use { "debugloop/telescope-undo.nvim", commit = "95b61c01ea3a4c9e8747731148e905bbcf0ccaee" }
 
   -- Treesitter
   use { "nvim-treesitter/nvim-treesitter", tag = "v0.9.2" }
