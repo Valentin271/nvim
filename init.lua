@@ -1,4 +1,6 @@
-require "user.impatient"
+-- enable plugin compilation, cache ...
+vim.loader.enable()
+
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
