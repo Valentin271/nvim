@@ -63,12 +63,12 @@ return packer.startup(function(use)
   use { "wuelnerdotexe/vim-enfocado" }
 
   -- cmp plugins
-  use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
-  use { "hrsh7th/cmp-path", commit = "447c87cdd6e6d6a1d2488b1d43108bfa217f56e1" } -- path completions
-  use { "saadparwaiz1/cmp_luasnip", commit = "a9de941bcbda508d0a45d28ae366bb3f08db2e36" } -- snippet completions
-  use { "hrsh7th/cmp-nvim-lsp", commit = "affe808a5c56b71630f17aa7c38e15c59fd648a8" }
+  use { "hrsh7th/nvim-cmp", commit = "5260e5e8ecadaf13e6b82cf867a909f54e15fd07" } -- The completion plugin
+  use { "hrsh7th/cmp-path", commit = "91ff86cd9c29299a64f968ebb45846c485725f23" } -- path completions
+  use { "saadparwaiz1/cmp_luasnip", commit = "05a9ab28b53f71d1aece421ef32fee2cb857a843" } -- snippet completions
+  use { "hrsh7th/cmp-nvim-lsp", commit = "39e2eda76828d88b773cc27a3f61d2ad782c922d" }
   use { "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" }
-  use { "hrsh7th/cmp-nvim-lsp-signature-help", commit = "3d8912ebeb56e5ae08ef0906e3a54de1c66b92f1" }
+  use { "hrsh7th/cmp-nvim-lsp-signature-help", commit = "031e6ba70b0ad5eee49fd2120ff7a2e325b17fa7" }
 
   -- snippets
   use { "L3MON4D3/LuaSnip", tag = "v2.1.0" } --snippet engine
