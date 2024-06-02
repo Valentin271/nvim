@@ -52,7 +52,7 @@ return packer.startup(function(use)
   use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "32d9627123321db65a4f158b72b757bcaef1a3f4" }
   use { "nvim-tree/nvim-web-devicons", tag = "v0.99" }
   use { "nvim-tree/nvim-tree.lua", tag = "v0.100" }
-  use { "akinsho/bufferline.nvim", tag = "v4.4.0" }
+  use { "akinsho/bufferline.nvim", tag = "v4.6.1" }
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   use { "akinsho/toggleterm.nvim", tag = "v2.8.0"}
   use { "ahmedkhalf/project.nvim", commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" }
