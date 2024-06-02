@@ -54,10 +54,10 @@ return packer.startup(function(use)
   use { "nvim-tree/nvim-tree.lua", tag = "v1.3.3" }
   use { "akinsho/bufferline.nvim", tag = "v4.6.1" }
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
-  use { "akinsho/toggleterm.nvim", tag = "v2.8.0"}
+  use { "akinsho/toggleterm.nvim", tag = "v2.11.0"}
   use { "ahmedkhalf/project.nvim", commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" }
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
-  use { "lukas-reineke/indent-blankline.nvim", tag = "v3.3.7" }
+  use { "lukas-reineke/indent-blankline.nvim", tag = "v3.6.2" }
   use { "goolord/alpha-nvim", commit = "1356b9ef31b985d541d94314f2cf73c61124bf1d" }
   use { "tpope/vim-sleuth", tag = "v2.0" }
 
@@ -92,7 +92,7 @@ return packer.startup(function(use)
   use { "nvim-treesitter/nvim-treesitter", tag = "v0.9.2" }
 
   -- Git
-  use { "lewis6991/gitsigns.nvim", tag = "v0.7" }
+  use { "lewis6991/gitsigns.nvim", tag = "v0.8.1" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
