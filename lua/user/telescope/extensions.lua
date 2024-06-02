@@ -4,5 +4,4 @@ if not tele_status_ok then
 end
 
 telescope.load_extension("undo")
-telescope.load_extension("git_signs")
 
