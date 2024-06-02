@@ -57,7 +57,6 @@ return packer.startup(function(use)
   use { "akinsho/toggleterm.nvim", tag = "v2.11.0"}
   use { "ahmedkhalf/project.nvim", commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" }
   use { "lukas-reineke/indent-blankline.nvim", tag = "v3.6.2" }
-  use { "goolord/alpha-nvim", commit = "1356b9ef31b985d541d94314f2cf73c61124bf1d" }
   use { "tpope/vim-sleuth", tag = "v2.0" }
 
   -- Colorschemes
