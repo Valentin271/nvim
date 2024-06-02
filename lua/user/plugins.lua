@@ -80,7 +80,7 @@ return packer.startup(function(use)
   use { "neovim/nvim-lspconfig", tag = "v0.1.7" } -- enable LSP
   use { "williamboman/mason.nvim", tag = "v1.10.0" }
   use { "williamboman/mason-lspconfig.nvim", tag = "v1.26.0" }
-  use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
+  use { "nvimtools/none-ls.nvim", commit = "e508fc08eb57bd42ff1e0486207f798cb2720812" } -- for formatters and linters
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim", tag = "0.1.8" }

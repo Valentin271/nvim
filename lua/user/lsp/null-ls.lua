@@ -4,8 +4,10 @@ if not null_ls_status_ok then
 end
 
 local formatting = null_ls.builtins.formatting
-local diagnostics = null_ls.builtins.diagnostics
 local code_actions = null_ls.builtins.code_actions
+
+local trim_newlines = require("user.lsp.null-ls.trim_newlines")
+local trim_whitespace = require("user.lsp.null-ls.trim_whitespace")
 
 null_ls.setup {
   debug = false,
@@ -19,19 +21,9 @@ null_ls.setup {
       },
     }),
     formatting.stylua,
-    formatting.trim_newlines,
-    formatting.trim_whitespace.with({
-      disabled_filetypes = { "rust", "markdown" }
-    }),
-
-    diagnostics.eslint.with({
-      diagnostic_config = {
-        update_in_insert = false
-      }
-    }),
-    diagnostics.php,
+    trim_newlines,
+    trim_whitespace,
 
     code_actions.gitsigns,
-    code_actions.eslint,
   },
 }
