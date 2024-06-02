@@ -8,7 +8,6 @@ vim.g.enfocado_plugins = {
   "indent-blankline",
   "null-ls",
   "cmp",
-  "dap-ui",
   "mason",
   "lspconfig",
   "treesitter",
