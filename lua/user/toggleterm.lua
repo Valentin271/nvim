@@ -55,30 +55,6 @@ function _LAZYGIT_TOGGLE()
   lazygit:toggle()
 end
 
-
--- gobang
-
-local function _gobang_on_open()
-  -- Asserts esc is available for gobang to cancel
-  vim.api.nvim_buf_del_keymap(0, "t", "<esc>")
-  -- For possibly future persitent terminal
-  -- vim.api.nvim_buf_set_keymap(0, 't', 'q',  "<cmd>lua _GOBANG_TOGGLE()<CR>", { noremap = true })
-end
-
-function _GOBANG_TOGGLE()
-  local gobang = Terminal:new({
-    cmd = "gobang",
-    hidden = true,
-    direction = "float",
-    on_open = _gobang_on_open,
-    float_opts = {
-      border = "curved"
-    }
-  })
-  gobang:toggle()
-end
-
-
 -- lazydocker
 
 local function _lazydocker_on_open()

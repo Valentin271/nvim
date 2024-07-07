@@ -20,7 +20,7 @@ Run `nvim` and wait for the plugins to be installed
 
 ## Requirements
 
-- Neovim 0.9
+- Neovim 0.10
 - ripgrep
 - fd
 - `npm i -g neovim`
@@ -29,7 +29,6 @@ Run `nvim` and wait for the plugins to be installed
 
 - Lazygit
 - Lazydocker
-- Gobang
 - inlyne
 
 ## Get healthy

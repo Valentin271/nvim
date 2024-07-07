@@ -76,7 +76,6 @@ keymap("n", "<leader>fu", ":Telescope undo<CR>", opts)
 
 -- External program
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
-keymap("n", "<leader>go", "<cmd>lua _GOBANG_TOGGLE()<CR>", opts)
 keymap("n", "<leader>gd", "<cmd>lua _LAZYDOCKER_TOGGLE()<CR>", opts)
 keymap("n", "<leader>gi", ":silent !inlyne % &<CR>", opts)
 
