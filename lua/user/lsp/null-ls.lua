@@ -12,14 +12,6 @@ local trim_whitespace = require("user.lsp.null-ls.trim_whitespace")
 null_ls.setup {
   debug = false,
   sources = {
-    formatting.prettier.with({
-      extra_filetypes = { "toml" },
-      extra_args = {
-        "--single-quote",
-        "--trailing-comma es5",
-        "--quote-props as-needed",
-      },
-    }),
     formatting.stylua,
     trim_newlines,
     trim_whitespace,
