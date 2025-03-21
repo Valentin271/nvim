@@ -87,7 +87,7 @@ return packer.startup(function(use)
   use { "debugloop/telescope-undo.nvim", commit = "95b61c01ea3a4c9e8747731148e905bbcf0ccaee" }
 
   -- Treesitter
-  use { "nvim-treesitter/nvim-treesitter", tag = "v0.9.2" }
+  use { "nvim-treesitter/nvim-treesitter", tag = "v0.9.3" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", tag = "v0.8.1" }
