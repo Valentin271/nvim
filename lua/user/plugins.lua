@@ -83,6 +83,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim", tag = "0.1.8" }
+  use { "stevearc/dressing.nvim", tag = "v2.2.1" } -- Nice select and input
   use { "debugloop/telescope-undo.nvim", commit = "95b61c01ea3a4c9e8747731148e905bbcf0ccaee" }
 
   -- Treesitter
