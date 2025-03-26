@@ -1,6 +1,5 @@
 local servers = {
 	"lua_ls",
-	"tsserver",
 	"bashls",
 	"jsonls",
 	"yamlls",
