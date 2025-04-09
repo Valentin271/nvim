@@ -34,6 +34,7 @@ nvim_tree.setup {
     enable = true,
     update_cwd = true,
   },
+  select_prompts = true, -- renders nicely with dressing.nvim
   hijack_cursor = true,
   renderer = {
     root_folder_modifier = ":t",
