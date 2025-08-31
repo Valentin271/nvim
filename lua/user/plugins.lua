@@ -50,8 +50,8 @@ return packer.startup(function(use)
   use { "windwp/nvim-ts-autotag" }
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
   use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "32d9627123321db65a4f158b72b757bcaef1a3f4" }
-  use { "nvim-tree/nvim-web-devicons", commit = "4c3a5848ee0b09ecdea73adcd2a689190aeb728c" }
-  use { "nvim-tree/nvim-tree.lua", tag = "v1.11.0" }
+  use { "nvim-tree/nvim-web-devicons", commit = "f66cdfef5e84112045b9ebc3119fee9bddb3c687" }
+  use { "nvim-tree/nvim-tree.lua", tag = "v1.14.0" }
   use { "akinsho/bufferline.nvim", tag = "v4.9.1" }
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   use { "akinsho/toggleterm.nvim", tag = "v2.13.1"}
