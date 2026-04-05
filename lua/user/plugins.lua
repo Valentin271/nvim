@@ -44,53 +44,53 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
-  use { "nvim-lua/plenary.nvim", commit = "857c5ac632080dba10aae49dba902ce3abf91b35" } -- Useful lua functions used by lots of plugins
-  use { "windwp/nvim-autopairs", commit = "6522027785b305269fa17088395dfc0f456cedd2" } -- Autopairs, integrates with both cmp and treesitter
+  use { "wbthomason/packer.nvim", commit = "ea0cc3c59f67c440c5ff0bbe4fb9420f4350b9a3" } -- Have packer manage itself
+  use { "nvim-lua/plenary.nvim", commit = "b9fd5226c2f76c951fc8ed5923d85e4de065e509" } -- Useful lua functions used by lots of plugins
+  use { "windwp/nvim-autopairs", commit = "59bce2eef357189c3305e25bc6dd2d138c1683f5" } -- Autopairs, integrates with both cmp and treesitter
   use { "windwp/nvim-ts-autotag" }
-  use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
-  use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "32d9627123321db65a4f158b72b757bcaef1a3f4" }
-  use { "nvim-tree/nvim-web-devicons", commit = "f66cdfef5e84112045b9ebc3119fee9bddb3c687" }
-  use { "nvim-tree/nvim-tree.lua", tag = "v1.14.0" }
+  use { "numToStr/Comment.nvim", commit = "e30b7f2008e52442154b66f7c519bfd2f1e32acb" }
+  use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "6141a40173c6efa98242dc951ed4b6f892c97027" }
+  use { "nvim-tree/nvim-web-devicons", commit = "40e9d5a6cc3db11b309e39593fc7ac03bb844e38" }
+  use { "nvim-tree/nvim-tree.lua", tag = "v1.16.0" }
   use { "akinsho/bufferline.nvim", tag = "v4.9.1" }
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   use { "akinsho/toggleterm.nvim", tag = "v2.13.1"}
   use { "ahmedkhalf/project.nvim", commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" }
-  use { "lukas-reineke/indent-blankline.nvim", tag = "v3.9.0" }
+  use { "lukas-reineke/indent-blankline.nvim", tag = "v3.9.1" }
   use { "tpope/vim-sleuth", tag = "v2.0" }
 
   -- Colorschemes
   use { "wuelnerdotexe/vim-enfocado" }
 
   -- cmp plugins
-  use { "hrsh7th/nvim-cmp", tag = "v0.0.2" } -- The completion plugin
-  use { "hrsh7th/cmp-path", commit = "91ff86cd9c29299a64f968ebb45846c485725f23" } -- path completions
+  use { "hrsh7th/nvim-cmp", commit = "a1d504892f2bc56c2e79b65c6faded2fd21f3eca" } -- The completion plugin
+  use { "hrsh7th/cmp-path", commit = "c642487086dbd9a93160e1679a1327be111cbc25" } -- path completions
   use { "saadparwaiz1/cmp_luasnip", commit = "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" } -- snippet completions
-  use { "hrsh7th/cmp-nvim-lsp", commit = "39e2eda76828d88b773cc27a3f61d2ad782c922d" }
-  use { "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" }
-  use { "hrsh7th/cmp-nvim-lsp-signature-help", commit = "031e6ba70b0ad5eee49fd2120ff7a2e325b17fa7" }
+  use { "hrsh7th/cmp-nvim-lsp", commit = "cbc7b02bb99fae35cb42f514762b89b5126651ef" }
+  use { "hrsh7th/cmp-nvim-lua", commit = "e3a22cb071eb9d6508a156306b102c45cd2d573d" }
+  use { "hrsh7th/cmp-nvim-lsp-signature-help", commit = "fd3e882e56956675c620898bf1ffcf4fcbe7ec84" }
 
   -- snippets
-  use { "L3MON4D3/LuaSnip", tag = "v2.3.0" } --snippet engine
-  use { "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" } -- a bunch of snippets to use
+  use { "L3MON4D3/LuaSnip", tag = "v2.4.1" } --snippet engine
+  use { "rafamadriz/friendly-snippets", commit = "6cd7280adead7f586db6fccbd15d2cac7e2188b9" } -- a bunch of snippets to use
   use { "b0o/SchemaStore.nvim" }
 
   -- LSP
-  use { "neovim/nvim-lspconfig", tag = "v1.7.0" } -- enable LSP
-  use { "williamboman/mason.nvim", tag = "v1.11.0" }
-  use { "williamboman/mason-lspconfig.nvim", tag = "v1.32.0" }
-  use { "nvimtools/none-ls.nvim", commit = "a117163db44c256d53c3be8717f3e1a2a28e6299" } -- for formatters and linters
+  use { "neovim/nvim-lspconfig", tag = "v2.7.0" } -- enable LSP
+  use { "mason-org/mason.nvim", tag = "v2.2.1" }
+  use { "mason-org/mason-lspconfig.nvim", tag = "v2.1.0" }
+  use { "nvimtools/none-ls.nvim", commit = "6ad251ef07dd4ba0cc725a5553cc76e9923f1a4a" } -- for formatters and linters
 
   -- Telescope
-  use { "nvim-telescope/telescope.nvim", tag = "0.1.8" }
+  use { "nvim-telescope/telescope.nvim", tag = "v0.2.1" }
   use { "stevearc/dressing.nvim", tag = "v2.2.1" } -- Nice select and input
-  use { "debugloop/telescope-undo.nvim", commit = "95b61c01ea3a4c9e8747731148e905bbcf0ccaee" }
+  use { "debugloop/telescope-undo.nvim", commit = "928d0c2dc9606e01e2cc547196f48d2eaecf58e5" }
 
   -- Treesitter
-  use { "nvim-treesitter/nvim-treesitter", tag = "v0.9.3" }
+  use { "nvim-treesitter/nvim-treesitter", tag = "v0.10.0" }
 
   -- Git
-  use { "lewis6991/gitsigns.nvim", tag = "v1.0.2" }
+  use { "lewis6991/gitsigns.nvim", tag = "v2.1.0" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
