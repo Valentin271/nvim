@@ -76,7 +76,6 @@ return packer.startup(function(use)
   use { "b0o/SchemaStore.nvim" }
 
   -- LSP
-  use { "neovim/nvim-lspconfig", tag = "v2.7.0" } -- enable LSP
   use { "mason-org/mason.nvim", tag = "v2.2.1" }
   use { "mason-org/mason-lspconfig.nvim", tag = "v2.1.0" }
   use { "nvimtools/none-ls.nvim", commit = "6ad251ef07dd4ba0cc725a5553cc76e9923f1a4a" } -- for formatters and linters
