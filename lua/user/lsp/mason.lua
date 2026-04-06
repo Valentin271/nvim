@@ -21,20 +21,12 @@ local settings = {
 
 require("mason").setup(settings)
 
-local opts = {}
+local opts = {
+	on_attach = require("user.lsp.handlers").on_attach,
+	capabilities = require("user.lsp.handlers").capabilities,
+}
 
 for _, server in pairs(servers) do
-	opts = {
-		on_attach = require("user.lsp.handlers").on_attach,
-		capabilities = require("user.lsp.handlers").capabilities,
-	}
-
-	-- Merges additional configuration if there is a config file
-	local require_ok, conf_opts = pcall(require, "user.lsp.settings." .. server)
-	if require_ok then
-		opts = vim.tbl_deep_extend("force", conf_opts, opts)
-	end
-
 	vim.lsp.config(server, opts)
 	vim.lsp.enable(server)
 end
