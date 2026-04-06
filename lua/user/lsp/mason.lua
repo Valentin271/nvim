@@ -20,10 +20,6 @@ local settings = {
 }
 
 require("mason").setup(settings)
-require("mason-lspconfig").setup({
-	ensure_installed = servers,
-	automatic_installation = true,
-})
 
 local opts = {}
 
@@ -33,8 +29,6 @@ for _, server in pairs(servers) do
 		capabilities = require("user.lsp.handlers").capabilities,
 	}
 
-	server = vim.split(server, "@")[1]
-
 	-- Merges additional configuration if there is a config file
 	local require_ok, conf_opts = pcall(require, "user.lsp.settings." .. server)
 	if require_ok then
@@ -42,4 +36,5 @@ for _, server in pairs(servers) do
 	end
 
 	vim.lsp.config(server, opts)
+	vim.lsp.enable(server)
 end
