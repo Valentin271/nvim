@@ -3,7 +3,7 @@ vim.loader.enable()
 
 require "user.options"
 require "user.keymaps"
-require "user.plugins"
+require "user.pack"
 require "user.autocommands"
 require "user.colorscheme"
 require "user.cmp"

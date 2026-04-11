@@ -12,7 +12,6 @@ vim.g.enfocado_plugins = {
   "lspconfig",
   "treesitter",
   "tree",
-  "packer",
   "telescope",
 }
 

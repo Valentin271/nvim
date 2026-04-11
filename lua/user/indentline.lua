@@ -18,7 +18,6 @@ ibl.setup {
   exclude = {
     filetypes = {
       "help",
-      "packer",
       "NvimTree",
     },
     buftypes = {

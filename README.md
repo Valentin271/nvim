@@ -76,4 +76,4 @@ Make sure the formatter or linter is installed and add it to this setup function
 
 ### Plugins
 
-You can install new plugins here: [plugins](https://github.com/Valentin271/nvim/blob/master/lua/user/plugins.lua#L45)
+You can install new plugins here: [plugins](https://github.com/Valentin271/nvim/blob/master/lua/user/pack.lua)
