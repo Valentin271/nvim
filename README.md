@@ -20,7 +20,7 @@ Run `nvim` and wait for the plugins to be installed
 
 ## Requirements
 
-- Neovim 0.10
+- Neovim 0.12
 - ripgrep
 - fd
 - `npm i -g neovim`
