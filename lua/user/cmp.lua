@@ -111,8 +111,13 @@ cmp.setup {
     select = false,
   },
   window = {
-    completion = cmp.config.window.bordered(),
-    documentation = cmp.config.window.bordered(),
+    completion = {
+      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    },
+    documentation = {
+      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    },
+
   },
   preselect = cmp.PreselectMode.None,
   experimental = {
